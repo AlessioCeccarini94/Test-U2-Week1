@@ -9478,7 +9478,19 @@
       </section>
     </main>
     <script>
-      const letterM = document.querySelector("g")
+      const letterM = document.querySelectorAll("g")
+      console.log(letterM)
+      for (let i = 0; i < letterM.length; i++) {
+        const singleLetter = letterM[i]
+        console.log("lettere singole", singleLetter)
+      }
+      const effect = () => {
+        const isEnabled = Math.random(0, 1)
+        if (isEnabled === 0) {
+          letterM.classList.add("none")
+        }
+        console.log(effect)
+      }
     </script>
   </body>
 </html>
