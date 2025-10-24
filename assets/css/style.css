@@ -312,5 +312,5 @@ li {
 }
 
 .none {
-  display: none;
+  opacity: 0;
 }
