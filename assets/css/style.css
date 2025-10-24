@@ -40,6 +40,8 @@ header {
   border-bottom: 1px solid black;
   padding-bottom: 1em;
   background-color: #f8c017;
+  position: sticky;
+  top: 0;
 }
 
 header img {
@@ -309,8 +311,4 @@ li {
   #button-navbar {
     border: none;
   }
-}
-
-.none {
-  opacity: 0;
 }
