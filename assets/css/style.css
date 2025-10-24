@@ -1,0 +1,299 @@
+/* stli comuni */
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1em;
+}
+h5 {
+  font-size: 0.5em;
+}
+h6 {
+  font-size: 0.5em;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#svg-m {
+  display: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+  background-color: #f8c017;
+}
+
+header img {
+  margin-left: 10px;
+}
+
+header ul,
+button {
+  display: flex;
+  font-size: 0.8rem;
+  list-style: none;
+  font-size: 0.8rem;
+  margin: 0 5px;
+  align-items: center;
+}
+header button {
+  border-radius: 20px;
+  border-color: black;
+  background-color: black;
+  color: white;
+}
+#big-screen-navbar li,
+li {
+  padding-right: 1em;
+}
+
+#big-screen-navbar {
+  display: none;
+}
+
+#topBar {
+  background-color: #f8c017;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3em 2em;
+}
+
+#topBar h1 {
+  padding-bottom: 20px;
+}
+#topBar p {
+  max-width: 80%;
+  padding-bottom: 20px;
+}
+
+#topBar button {
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+}
+
+#trend {
+  padding-left: 30px;
+  padding-right: 40px;
+  border-bottom: 0.8px solid gray;
+  margin-bottom: 20px;
+}
+
+#trend h5 {
+  display: inline;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  font-weight: bold;
+}
+
+#trend img {
+  width: 20px;
+  border-radius: 50%;
+  vertical-align: middle;
+  padding-right: 0.2em;
+}
+#trend p {
+  padding-bottom: 1em;
+  font-weight: bold;
+}
+
+#trend-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.topic {
+  font-size: 0.9em;
+}
+
+.date-time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: gainsboro;
+  font-size: 0.5em;
+  padding: 0;
+  width: 80%;
+}
+
+#button-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 5px;
+  border-bottom: 0.8px solid grey;
+  padding-bottom: 2em;
+}
+
+#button-navbar button {
+  background-color: white;
+  color: lightgray;
+  border: 1px solid;
+  margin: 3px;
+}
+
+#button-navbar-title {
+  margin-top: 30px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+#bottom-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8em;
+  padding-top: 2em;
+  list-style: none;
+  margin: 0 50px 10px 10px;
+}
+
+#bottom-navbar li {
+  padding-right: 0.3em;
+  color: grey;
+}
+
+#articles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#card {
+  display: flex;
+  margin-bottom: 10px;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+#text .date-time {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+#text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 10px;
+  flex-wrap: wrap;
+}
+
+#text img {
+  border-radius: 50%;
+  width: 20px;
+}
+
+#img img {
+  width: 120px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#card h4 {
+  font-weight: bold;
+}
+
+#card h5 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1em;
+}
+#card h5 img {
+  padding-right: 0.2em;
+}
+
+#card p {
+  font-size: 0.6em;
+  color: gray;
+}
+
+#card button {
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  border: 1px solid #f2f2f2;
+}
+
+@media screen and (min-width: 720px) {
+  #card {
+    width: 100vw;
+    justify-content: space-around;
+  }
+  #articles #text {
+    width: 50vw;
+  }
+  #topBar {
+    flex-direction: row;
+    padding: 0 10px;
+  }
+  #topBar svg {
+    display: block;
+    width: 100%;
+  }
+  #top-title {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 100%;
+    padding-top: 10%;
+  }
+
+  #big-screen-navbar {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #top-title {
+    font-size: 2em;
+  }
+  #main-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .trend-card {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  #trend-card-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #trend {
+    font-size: 2em;
+  }
+  #articles {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60%;
+    border-right: 1px solid grey;
+    padding-right: 1em;
+    font-size: 1.5em;
+  }
+  #text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+    width: 50%;
+  }
+  #button-navbar {
+    border: none;
+  }
+}
